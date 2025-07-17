@@ -7,5 +7,14 @@
   </head>
   <body>
     APIni test qilish uchun
+
+    <script>
+      async function abs() {
+        const res = await fetch('https://task-manager-fn7.onrender.com/tasks');
+        const data = await res.json();
+        console.log(data);
+      }
+      abs();
+    </script>
   </body>
 </html>
